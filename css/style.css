@@ -65,7 +65,7 @@ label{
     height: 700px;
     border-radius: 15px;
     padding: 15px;
-    background-image: url("/img/black.png");
+    background-image: url(../img/black.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: orange;
@@ -82,7 +82,7 @@ label{
     height: 700px;
     border-radius: 15px;
     padding: 15px;
-    background-image: url("/img/white.png");
+    background-image: url(../img/white.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: orange;
