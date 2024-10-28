@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Proyect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container-logo">
+        <img class="logo" src="img/kamiLogo.png" alt="Logo de la compañia">
+        <h1>Diseña tu propia camiseta</h1>
+    </div>
+
+    <div>
+        <div id="container" class="container">
+            <div class="container-inputs">
+                <div>
+                    <label for="titulo">T&iacute;tulo</label>
+                    <input id="inputTitulo" type="text" maxlength="10">
+                </div>
+
+                <div class="color-letra">
+                    <label for="">Color letra:</label>
+                    <div id="coloresLetra">
+                        <input id="letraNaranja" type="radio" name="colorLetra" value="naranja" checked>
+                        <input id="letraBlanca" type="radio" name="colorLetra" value="blanco">
+                        <input id="letraNegra" type="radio" name="colorLetra" value="negro">                       
+                        <input id="letraAzul" type="radio" name="colorLetra" value="azul">
+                        <input id="letraMagenta" type="radio" name="colorLetra" value="magenta">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="horizontal">Horizontal:</label>
+                        <input id="horizontal" type="range" value="0" max="80">
+                    </div>
+                    <div>
+                        <label for="vertical">Vertical:</label>
+                        <input id="vertical" type="range" value="0" max="81">
+                    </div>
+                </div>
+    
+                <div class="color">
+                    <div class="negra">
+                        <label for="black">Negra:</label>
+                        <input id="camiNegra" type="radio" name="color" value="negra" checked>
+                    </div>
+                    <div>
+                        <label for="black">Blanca:</label>
+                        <input id="camiBlanca" type="radio" name="color" value="blanca">
+                    </div>
+                </div>
+                <div class="container-dibujos">
+                    <div>
+                        <p class="elige">Elige tu dise&#241;o:</p>
+                    </div>
+                    <div id="containerImg" class="container-img">
+                        <div>
+                            <img id="nuka" src="img/nukacola.png" alt="Nuka Cola" class="img-elegir">
+                            <img id="quantum" src="img/quantum.png" alt="Nuka Quantum" class="img-elegir">
+                        </div>
+                        <div>
+                            <img id="atom" src="img/atomCats.png" alt="Atom Cats" class="img-elegir">
+                            <img id="vault" src="img/vaultec.png" alt="Vault-Tec" class="img-elegir">
+                        </div>
+                        <div>
+                            <img id="lucky" src="img/lucky38.png" alt="Lucky 38" class="img-elegir">
+                            <img id="yermo" src="img/yermoSalvaje.png" alt="Yermo Salvaje" class="img-elegir">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="camiseta" class="container-camiseta-negra">
+                <div class="position-camiseta-horizontal">
+                    <div id="tituloCamiseta" class="tituloCamiseta">
+                        <p id="titulo" class="tituloTexto">titulo</p></div>
+                    <div id="containerDibujoP" class="containerDibujoP">
+                        <!-- onerror cortesía de Midudev -->
+                        <img id="fotoP" src="" alt="" class="dibujoP-camiseta" onerror="this.onerror=null;this.src='img/imgDefaultReverse.png'" draggable="false">
+                    </div>
+                </div>
+                <div class="position-camiseta-vertical">
+                    <div id="containerDibujoG" class="containerDibujoG">
+                        <img id="fotoG" src="" alt="" class="dibujoG-camiseta" onerror="this.onerror=null;this.src='img/imgDefaultNormal.png'" draggable="false">
+                    </div>
+                    <div><p id="nombreDibujo" class="nombreDibujo">NOMBRE DIBUJO</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

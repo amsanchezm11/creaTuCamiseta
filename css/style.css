@@ -1,0 +1,298 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #543E62;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    width: 100%;
+    justify-content: center; 
+    box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.75);
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.container-inputs {
+    border: 3px solid magenta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 25px 35px;
+    height: max-content;
+    width: max-content;
+    background-color: #392a43;
+    color: white;
+    margin-top: 5px;
+    /* box-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple; */
+    box-shadow: 0 0 10px magenta, 0 0 20px magenta, 0 0 30px magenta;
+}
+
+label{
+    font-size: 20px;
+}
+
+.container-camiseta-negra {
+    /* border: 3px solid mediumblue; */
+    width: 700px;
+    height: 700px;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: url(/img/black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-camiseta-blanca {
+    /* border: 3px solid mediumblue; */
+    width: 700px;
+    height: 700px;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: url(/img/white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-camiseta img {
+    width: 100%;
+    height: 100%;
+}
+
+.negra {
+    display: flex;
+    flex-direction: row;
+    gap: 9.4px;
+}
+
+.position-camiseta-horizontal {
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    width: 300px;
+    height: 100px;
+    margin-top: 80px;
+}
+.position-camiseta-vertical {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 350px;
+}
+
+
+.containerDibujoP {
+    /* border: 2px solid blue; */
+    margin-right: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDibujoG {
+    /* border: 2px solid green; */
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombreDibujo {
+    /* border: 2px solid blue; */
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    /* height: 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 0;
+}
+
+.dibujoG-camiseta{
+    width: 300px;
+    height: 300px;
+}
+
+.dibujoP-camiseta{
+    width: 100px;
+    height: 100px;
+    transform: scaleX(-1);
+}
+
+.img-elegir{
+    width: 130px;
+    height: 130px;
+}
+
+.container-img{
+    border: 4px solid magenta;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px magenta, 0 0 20px magenta, 0 0 30px magenta;
+}
+
+.tituloCamiseta {
+    /* border: 2px solid green; */
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+}
+
+.tituloTexto{
+    width: max-content;
+    margin: 0;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+}
+
+.container-img img{
+    cursor: grab;
+}
+
+input[type="text"]{
+    background-color: rgb(72, 2, 72);
+    color: white;
+    border-radius: 5px;
+    height: 20px;
+    border: 2px solid  rgb(30, 0, 30);
+    font-size: 18px;
+}
+
+input[type="text"]:focus{
+    border: 3px solid magenta;
+    outline: none;
+    font-size: 18px;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    height: 14px;
+    border-radius: 15px;
+    cursor: grab;
+    accent-color: magenta;
+    background-color: rgb(72, 2, 72);
+}
+
+input[type="range"]:active{
+    cursor: grabbing;
+    accent-color: rgb(72, 2, 72);
+}
+
+input[ type="radio"]{
+    cursor: pointer;
+    accent-color: magenta;
+    transform: scale(1.5);
+}
+
+.elige{
+    font-size: 20px;
+    margin: 0px;
+}
+
+.container-inputs div{
+    margin-bottom: 5px;
+}
+
+.color{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-dibujos{
+    margin: 0px;
+}
+
+.color-letra{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+#letraNegra{
+    cursor: pointer;
+    accent-color: black;
+    transform: scale(1.5);
+}
+
+#letraBlanca{
+    cursor: pointer;
+    accent-color: white;
+    transform: scale(1.5);
+}
+
+#letraAzul{
+    cursor: pointer;
+    accent-color: blue;
+    transform: scale(1.5);
+}
+
+#letraMagenta{
+    cursor: pointer;
+    accent-color: magenta;
+    transform: scale(1.5);
+}
+
+#letraNaranja{
+    cursor: pointer;
+    accent-color: orange;
+    transform: scale(1.5);
+}
+
+.verde{
+    border-radius: 15px;
+    background-color: rgb(94, 221, 94);
+}
