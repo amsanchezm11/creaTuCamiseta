@@ -94,7 +94,11 @@ function cambiarTitulo() {
     let titulo = document.getElementById("titulo");
     let inputTexto = document.getElementById("inputTitulo");
 
-    titulo.innerHTML = inputTexto.value;
+    if (inputTexto.value.length > 10) {
+        alert("Ups! El limite es de 10 caracteres.")
+    }else{
+        titulo.innerHTML = inputTexto.value;
+    } 
 }
 
 // AÑADO LOS EVENTOS A LOS INPUTS DE RANGO CON LA FUNCION MOVER TÍTULO
