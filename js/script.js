@@ -42,6 +42,10 @@ function cambiarColorLetra(event) {
             titulo.style.color = "white";
             nombreDibujo.style.color = "white";
             break;
+        case "rojo":
+            titulo.style.color = "crimson";
+            nombreDibujo.style.color = "crimson";
+            break;
         case "azul":
             titulo.style.color = "deepskyblue";
             nombreDibujo.style.color = "deepskyblue";
@@ -53,6 +57,10 @@ function cambiarColorLetra(event) {
         case "naranja":
             titulo.style.color = "orange";
             nombreDibujo.style.color = "orange";
+            break;
+        case "purpura":
+            titulo.style.color = "#543E62";
+            nombreDibujo.style.color = "#543E62";
             break;
     }
 

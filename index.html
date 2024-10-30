@@ -24,37 +24,49 @@
                     <input id="inputTitulo" type="text" maxlength="10">
                 </div>
 
-                <div class="color-letra">
-                    <label for="">Color letra:</label>
-                    <div id="coloresLetra">
-                        <input id="letraNaranja" type="radio" name="colorLetra" value="naranja" checked>
-                        <input id="letraBlanca" type="radio" name="colorLetra" value="blanco">
-                        <input id="letraNegra" type="radio" name="colorLetra" value="negro">                       
-                        <input id="letraAzul" type="radio" name="colorLetra" value="azul">
-                        <input id="letraMagenta" type="radio" name="colorLetra" value="magenta">
-                    </div>
+                <div>
+                    <fieldset  class="color-letra">
+                        <legend>Color de letra</legend>
+                        <div id="coloresLetra">
+                            <input id="letraNaranja" type="radio" name="colorLetra" value="naranja" checked>
+                            <input id="letraBlanca" type="radio" name="colorLetra" value="blanco">
+                            <input id="letraNegra" type="radio" name="colorLetra" value="negro">
+                            <input id="letraRojo" type="radio" name="colorLetra" value="rojo">                       
+                            <input id="letraAzul" type="radio" name="colorLetra" value="azul">
+                            <input id="letraPurpura" type="radio" name="colorLetra" value="purpura">
+                            <input id="letraMagenta" type="radio" name="colorLetra" value="magenta">
+                        </div>
+                    </fieldset>                   
                 </div>
 
                 <div>
-                    <div>
-                        <label for="horizontal">Horizontal:</label>
-                        <input id="horizontal" type="range" value="0" max="80">
-                    </div>
-                    <div>
-                        <label for="vertical">Vertical:</label>
-                        <input id="vertical" type="range" value="0" max="81">
-                    </div>
+                    <fieldset class="orientacion">
+                        <legend>Posici&oacute;n T&iacute;tulo</legend>
+                        <div>
+                            <label for="horizontal">Horizontal:</label>
+                            <input id="horizontal" type="range" value="0" max="80">
+                        </div>
+                        <div>
+                            <label for="vertical">Vertical:</label>
+                            <input id="vertical" type="range" value="0" max="81">
+                        </div>
+                    </fieldset>
+                   
                 </div>
     
-                <div class="color">
-                    <div class="negra">
-                        <label for="black">Negra:</label>
-                        <input id="camiNegra" type="radio" name="color" value="negra" checked>
-                    </div>
-                    <div>
-                        <label for="black">Blanca:</label>
-                        <input id="camiBlanca" type="radio" name="color" value="blanca">
-                    </div>
+                <div>
+                    <fieldset class="color">
+                        <legend>Color Camiseta</legend>
+                        <div class="negra">
+                            <label for="color">Negra:</label>
+                            <input id="camiNegra" type="radio" name="color" value="negra" checked>
+                        </div>
+                        <div>
+                            <label for="color">Blanca:</label>
+                            <input id="camiBlanca" type="radio" name="color" value="blanca">
+                        </div>
+                    </fieldset>
+                 
                 </div>
                 <div class="container-dibujos">
                     <div>

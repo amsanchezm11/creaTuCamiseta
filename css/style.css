@@ -1,14 +1,15 @@
-*{
+* {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    cursor: url(../img/cursor.png), auto;
 }
 
-html{
+html {
     background-color: #543E62;
     width: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,11 +24,11 @@ body{
     gap: 30px;
     color: white;
     width: 100%;
-    justify-content: center; 
-    box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.75);
+    justify-content: center;
+    box-shadow: 0px 10px 8px -5px rgba(0, 0, 0, 0.75);
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
 }
@@ -54,8 +55,9 @@ body{
     box-shadow: 0 0 10px magenta, 0 0 20px magenta, 0 0 30px magenta;
 }
 
-label{
+label {
     font-size: 20px;
+    color: magenta;
 }
 
 .container-camiseta-negra {
@@ -71,7 +73,7 @@ label{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .container-camiseta-blanca {
@@ -103,11 +105,12 @@ label{
 .position-camiseta-horizontal {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;  
+    justify-content: space-between;
     width: 300px;
     height: 100px;
     margin-top: 80px;
 }
+
 .position-camiseta-vertical {
     display: flex;
     flex-direction: column;
@@ -117,7 +120,6 @@ label{
     width: 300px;
     height: 350px;
 }
-
 
 .containerDibujoP {
     margin-right: 10px;
@@ -146,23 +148,23 @@ label{
     margin: 0;
 }
 
-.dibujoG-camiseta{
+.dibujoG-camiseta {
     width: 300px;
     height: 300px;
 }
 
-.dibujoP-camiseta{
+.dibujoP-camiseta {
     width: 100px;
     height: 100px;
     transform: scaleX(-1);
 }
 
-.img-elegir{
+.img-elegir {
     width: 130px;
     height: 130px;
 }
 
-.container-img{
+.container-img {
     border: 4px solid magenta;
     display: flex;
     flex-direction: column;
@@ -179,7 +181,7 @@ label{
     position: relative;
 }
 
-.tituloTexto{
+.tituloTexto {
     width: max-content;
     margin: 0;
     top: 0%;
@@ -187,27 +189,32 @@ label{
     position: absolute;
 }
 
-.container-img img{
+.container-img img {
     cursor: grab;
 }
 
-input[type="text"]{
+.container-img img:hover {
+    cursor: grab;
+    transform: scale(1.1);
+}
+
+input[type="text"] {
     background-color: rgb(72, 2, 72);
     color: white;
     border-radius: 5px;
     height: 20px;
-    border: 1px solid  magenta;
+    border: 1px solid magenta;
     outline: none;
     font-size: 18px;
 }
 
-input[type="text"]:focus{
+input[type="text"]:focus {
     border: 3px solid magenta;
     outline: none;
     font-size: 18px;
 }
 
-input[type="range"]{
+input[type="range"] {
     appearance: none;
     -webkit-appearance: none;
     height: 14px;
@@ -218,74 +225,100 @@ input[type="range"]{
     background-color: rgb(72, 2, 72);
 }
 
-input[type="range"]:active{
+input[type="range"]:active {
     cursor: grabbing;
     accent-color: rgb(72, 2, 72);
 }
 
-input[ type="radio"]{
+input[ type="radio"] {
     cursor: pointer;
     accent-color: magenta;
     transform: scale(1.5);
 }
 
-.elige{
+.elige {
     font-size: 20px;
     margin: 0px;
+    color: magenta;
 }
 
-.container-inputs div{
+.container-inputs div {
     margin-bottom: 5px;
 }
 
-.color{
+.color {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid magenta;
+    color: magenta;
+    align-content: center;
 }
 
-.container-dibujos{
+.container-dibujos {
     margin: 0px;
 }
 
-.color-letra{
+.color-letra {
     display: flex;
     flex-direction: row;
     gap: 5px;
     align-items: center;
+    width: max-content;
+    border: 1px solid magenta;
+    color: magenta;
+
 }
 
-#letraNegra{
+#letraNegra {
     cursor: pointer;
     accent-color: black;
     transform: scale(1.5);
 }
 
-#letraBlanca{
+#letraBlanca {
     cursor: pointer;
     accent-color: white;
     transform: scale(1.5);
 }
 
-#letraAzul{
+#letraAzul {
     cursor: pointer;
     accent-color: deepskyblue;
     transform: scale(1.5);
 }
 
-#letraMagenta{
+#letraMagenta {
     cursor: pointer;
     accent-color: magenta;
     transform: scale(1.5);
 }
 
-#letraNaranja{
+#letraRojo {
+    cursor: pointer;
+    accent-color: crimson;
+    transform: scale(1.5);
+}
+
+#letraPurpura {
+    cursor: pointer;
+    accent-color: #543E62;
+    transform: scale(1.5);
+}
+
+#letraNaranja {
     cursor: pointer;
     accent-color: orange;
     transform: scale(1.5);
 }
 
-.verde{
+.verde {
     border-radius: 15px;
-    background-color: rgb(94, 221, 94);
+    background-color: rgb(125, 222, 125);
+    border: 3px dotted darkgreen;
+}
+
+.orientacion {
+    border: 1px solid magenta;
+    color: magenta;
 }
