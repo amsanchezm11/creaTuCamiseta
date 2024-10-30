@@ -14,8 +14,6 @@ aniadirEventos();
 function arrastarImg(event) {
     event.dataTransfer.setData("text/plain", event.target.src);
     event.dataTransfer.setData("alt", event.target.alt);
-    //console.log("Drag iniciado");
-
 }
 
 // AÑADIR EVENTOS A LOS INPUTS RADIO QUE SELECCIONARÁN LOS COLORES
@@ -45,8 +43,8 @@ function cambiarColorLetra(event) {
             nombreDibujo.style.color = "white";
             break;
         case "azul":
-            titulo.style.color = "blue";
-            nombreDibujo.style.color = "blue";
+            titulo.style.color = "deepskyblue";
+            nombreDibujo.style.color = "deepskyblue";
             break;
         case "magenta":
             titulo.style.color = "magenta";
@@ -69,7 +67,7 @@ radioBlanca.addEventListener("click", cambiarCamiseta);
 
 function cambiarCamiseta(element) {
     let contenedor = document.getElementById("camiseta");
-    console.log(contenedor);
+
     if (element.target.id === "camiNegra") {
         contenedor.removeAttribute("class");
         contenedor.classList.add("container-camiseta-negra");
@@ -114,13 +112,12 @@ let contenedor = document.getElementById("containerDibujoG");
 contenedor.addEventListener("dragover", function (event) {
     event.preventDefault();
     contenedor.classList.add("verde");
-    console.log("El elemento arrastrado está sobre el área de destino");
 });
 
 // SIN COLOR CUANDO SE VA
 let contenedorDibujoG = document.getElementById("containerDibujoG");
 
-contenedor.addEventListener("dragleave", (event) => {
+contenedor.addEventListener("dragleave", () => {
     contenedor.removeAttribute("class");
 });
 

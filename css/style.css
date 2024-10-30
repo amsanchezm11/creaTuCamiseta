@@ -51,7 +51,6 @@ body{
     background-color: #392a43;
     color: white;
     margin-top: 5px;
-    /* box-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple; */
     box-shadow: 0 0 10px magenta, 0 0 20px magenta, 0 0 30px magenta;
 }
 
@@ -60,7 +59,6 @@ label{
 }
 
 .container-camiseta-negra {
-    /* border: 3px solid mediumblue; */
     width: 700px;
     height: 700px;
     border-radius: 15px;
@@ -77,7 +75,6 @@ label{
 }
 
 .container-camiseta-blanca {
-    /* border: 3px solid mediumblue; */
     width: 700px;
     height: 700px;
     border-radius: 15px;
@@ -104,7 +101,6 @@ label{
 }
 
 .position-camiseta-horizontal {
-    /* border: 2px solid orange; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
@@ -113,7 +109,6 @@ label{
     margin-top: 80px;
 }
 .position-camiseta-vertical {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -125,7 +120,6 @@ label{
 
 
 .containerDibujoP {
-    /* border: 2px solid blue; */
     margin-right: 10px;
     width: 30%;
     display: flex;
@@ -134,7 +128,6 @@ label{
 }
 
 .containerDibujoG {
-    /* border: 2px solid green; */
     width: 90%;
     height: 90%;
     display: flex;
@@ -143,11 +136,9 @@ label{
 }
 
 .nombreDibujo {
-    /* border: 2px solid blue; */
     text-align: center;
     font-weight: bold;
     width: 100%;
-    /* height: 30%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +172,6 @@ label{
 }
 
 .tituloCamiseta {
-    /* border: 2px solid green; */
     width: 100px;
     height: 100px;
     font-weight: bold;
@@ -206,7 +196,8 @@ input[type="text"]{
     color: white;
     border-radius: 5px;
     height: 20px;
-    border: 2px solid  rgb(30, 0, 30);
+    border: 1px solid  magenta;
+    outline: none;
     font-size: 18px;
 }
 
@@ -220,6 +211,7 @@ input[type="range"]{
     -webkit-appearance: none;
     height: 14px;
     border-radius: 15px;
+    border: 1px solid magenta;
     cursor: grab;
     accent-color: magenta;
     background-color: rgb(72, 2, 72);
@@ -276,7 +268,7 @@ input[ type="radio"]{
 
 #letraAzul{
     cursor: pointer;
-    accent-color: blue;
+    accent-color: deepskyblue;
     transform: scale(1.5);
 }
 
