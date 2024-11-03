@@ -1,14 +1,23 @@
 /*  FUNCIÓN AÑADIR EVENTOS
     PARÁMETRO --> NO TIENE
-    ¿QUÉ HACE LA FUNCIÓN? --> SELECCIONA TODOS LOS INPUTS DEL ELEMENTO PADRE Y A TRAVÉS DE UN FOR-EACH LE ASIGNAMOS
-                              LOS EVENTOS DE "dragstart" JUNTO A LA FUNCIÓN "arrastarImg"
+    ¿QUÉ HACE LA FUNCIÓN? --> 1: SELECCIONA TODOS LOS INPUTS DEL ELEMENTO PADRE(#containerImg) Y A TRAVÉS DE 
+                              UN FOR-EACH LE ASIGNAMOS LOS EVENTOS DE "dragstart" JUNTO A LA FUNCIÓN "arrastarImg"
+                              2 :SELECCIONA TODOS LOS INPUTS DEL ELEMENTO PADRE(#coloresLetra) Y A TRAVÉS DE
+                              UN FOR-EACH LE ASIGNAMOS LOS EVENTOS DE "click" JUNTO A LA FUNCIÓN "cambiarColorLetra"
 */
 function aniadirEventos() {
     let contenedor = document.querySelector("#containerImg");
     let imagenes = contenedor.querySelectorAll("img");
 
+    let contenedorColores = document.querySelector("#coloresLetra");
+    let inputs = contenedorColores.querySelectorAll("input");
+
     imagenes.forEach(img => {
         img.addEventListener("dragstart", arrastarImg);
+    });
+
+    inputs.forEach(input => {
+        input.addEventListener("click", cambiarColorLetra);
     });
 }
 // LLAMAMOS A LA FUNCIÓN DE AÑADIR LOS EVENTOS A LAS IMÁGENES
@@ -23,24 +32,6 @@ function arrastarImg(event) {
     event.dataTransfer.setData("text/plain", event.target.src);
     event.dataTransfer.setData("alt", event.target.alt);
 }
-
-/*  FUNCIÓN AÑADIR EVENTOS DE COLOR
-    PARÁMETRO --> NO TIENE
-    ¿QUÉ HACE LA FUNCIÓN? --> SELECCIONA TODOS LOS INPUTS DEL ELEMENTO PADRE Y A TRAVÉS DE UN FOR-EACH LE ASIGNAMOS
-                              LOS EVENTOS DE "click" JUNTO A LA FUNCIÓN "cambiarColorLetra"
-    *[NOTA]: ÉSTA FUNCIÓN SE PUEDE HACER DENTRO DE LA ANTERIOR PERO SE HA DECIDIDO SEPARARLA PARA MEJOR ENTENDIMIENTO
-             DEL CÓDIGO
-*/
-function aniadirEventosColor() {
-    let contenedorColores = document.querySelector("#coloresLetra");
-    let inputs = contenedorColores.querySelectorAll("input");
-
-    inputs.forEach(input => {
-        input.addEventListener("click", cambiarColorLetra);
-    });
-}
-// LLAMAMOS A LA FUNCIÓN DE AÑADIR A LOS INPUTS RADIO DE COLOR
-aniadirEventosColor();
 
 /*  FUNCIÓN CAMBIAR COLOR LETRA
     PARÁMETRO --> EL ELEMENTO(event) ASOCIADO AL EVENTO

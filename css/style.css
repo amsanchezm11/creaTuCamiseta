@@ -316,6 +316,7 @@ input[ type="radio"] {
     border-radius: 15px;
     background-color: rgb(125, 222, 125);
     border: 3px dotted darkgreen;
+    cursor: url(../img/ok.png);
 }
 
 .orientacion {
