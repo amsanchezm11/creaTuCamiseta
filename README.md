@@ -23,6 +23,7 @@ El proyecto simula una tienda de camisetas en la que el usuario podr&aacute; ele
 
 ## ℹ️ Informaci&oacute;n del proyecto:
 * **Autor:** *Alberto S&aacute;nchez Mac&iacute;as*
+* **Nota:** *10,00*
 * **Curso** *DAW 2-B*
 * **Asignatura:** *Desarrollo Web en Entorno Servidor*
 * **Profesor:** *Borja Rodr&iacute;guez Puerta*
