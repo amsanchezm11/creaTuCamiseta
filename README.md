@@ -1,6 +1,6 @@
 # 👕 CREA TU CAMISETA
 
-## Descripci&oacute;n del proyecto: 
+## 📄 Descripci&oacute;n del proyecto: 
 El proyecto simula una tienda de camisetas en la que el usuario podr&aacute; elegir:
 * **T&iacute;tulo:**  
       **T&iacute;tulo** que le quiere añadir a la camiseta. Ej: nombre del usuario.(El limite de car&aacute;cteres es de 10).
@@ -16,6 +16,12 @@ El proyecto simula una tienda de camisetas en la que el usuario podr&aacute; ele
 
 * **Dibujo de la camiseta:**
   El usuario puede **elegir** el dise&ntilde;o de la **imagen** que va a tener la camiseta. Actualmente se dispone de 6 modelos diferentes.
+
+## 🛠️ Tecnologías utilizadas en el proyecto:
+
+[![HTML](https://skillicons.dev/icons?i=html)](https://github.com/amsanchezm11)
+[![CSS](https://skillicons.dev/icons?i=css)](https://github.com/amsanchezm11)
+[![JavaScript](https://skillicons.dev/icons?i=js)](https://github.com/amsanchezm11)
 
 ## ⚙️ Especificaciones:
 * **Proyecto realizado mediante:** *Visual Code Studio*
